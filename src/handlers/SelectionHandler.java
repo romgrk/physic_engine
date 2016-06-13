@@ -20,7 +20,7 @@ implements MouseListener, MouseMotionListener{
 	/**
 	 * 
 	 * This class manage the selection of an object and the information pane associated to it
-	 * @author Yanick Sévigny
+	 * @author Yanick Sevigny
 	 * 
 	 *
 	 */

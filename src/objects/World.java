@@ -46,7 +46,7 @@ public class World {
 	public final static double dt2 = dt * dt;
 	private double sceneMs = 0;
 	
-	private Vector gravity = Settings.DEFAULT_GRAVITY; // m/s²
+	private Vector gravity = Settings.DEFAULT_GRAVITY; // m/s^2
 	
 	/**
 	 * Constructor, takes in parameter the width and the height of the world.

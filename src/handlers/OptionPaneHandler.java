@@ -19,7 +19,7 @@ import GUI.Scene;
 /**
  * 
  * This class manage the creation of a small option panel for a specific object or world
- * @author Yanick Sévigny
+ * @author Yanick Sevigny
  * 
  *
  */
@@ -114,7 +114,7 @@ implements MouseListener{
 			});
 			optionPane.addComponent(pasteObject);
 		}
-		OptionButton resetWorld = new OptionButton("Rééinitialiser");
+		OptionButton resetWorld = new OptionButton("Reeinitialiser");
 		resetWorld.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent arg0) {
 				scene.getWorld().clear();

@@ -20,7 +20,7 @@ import GUI.WDrawer;
 /**
  * 
  * This class manage the creation of new polygons
- * @author Yanick Sévigny
+ * @author Yanick Sevigny
  * 
  *
  */

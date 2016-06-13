@@ -42,7 +42,7 @@ import utils.Point;
 
 /**
  * This class extends JFrame and is the main Frame of the application
- * @author Yanick Sévigny
+ * @author Yanick Sevigny
  *
  */
 
@@ -186,7 +186,7 @@ public class Application extends JFrame implements ComponentListener{
 		toggleplaypauseButton.addActionListener(new PlayPauseAction());
 		
 		sldGravity = new JSlider(0, 15);
-		lblGravity = new JLabel("Gravité : 8.0");
+		lblGravity = new JLabel("Gravite : 8.0");
 		sldGravity.addChangeListener(new GravityListener());
 		
 		options = new JPanel();
@@ -242,7 +242,7 @@ public class Application extends JFrame implements ComponentListener{
 	 * @return JMenuBar
 	 */
 	private JMenuBar initialiazeMenu() {
-		/*Début initialisation du Menu*/
+		/*Debut initialisation du Menu*/
 		JMenuBar menu = new JMenuBar();
 		
 		JMenu file = new JMenu("Ficher");
@@ -261,11 +261,11 @@ public class Application extends JFrame implements ComponentListener{
 			}});
 		
 		JMenuItem save = new JMenuItem("Sauvegarder");
-		save.setToolTipText("Permet de sauvegarder les objects présents");
+		save.setToolTipText("Permet de sauvegarder les objects presents");
 		save.addActionListener(new SaveAction());
 		
 		JMenuItem load = new JMenuItem("Charger");
-		load.setToolTipText("Permet de ramener des objects enregistrés");
+		load.setToolTipText("Permet de ramener des objects enregistres");
 		load.addActionListener(new LoadAction());
 		
 		JMenuItem exit = new JMenuItem("Quitter");
@@ -275,7 +275,7 @@ public class Application extends JFrame implements ComponentListener{
 			}});
 		
 		toggleFloor = new JCheckBoxMenuItem("Plancher");
-		toggleFloor.setToolTipText("Active ou désactive un plancher");
+		toggleFloor.setToolTipText("Active ou desactive un plancher");
 		toggleFloor.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
 				JCheckBoxMenuItem jcb = (JCheckBoxMenuItem)e.getSource();
@@ -289,7 +289,7 @@ public class Application extends JFrame implements ComponentListener{
 		});
 		
 		toggleRoof = new JCheckBoxMenuItem("Plafond");
-		toggleRoof.setToolTipText("Active ou désactive un plafond");
+		toggleRoof.setToolTipText("Active ou desactive un plafond");
 		toggleRoof.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
 				JCheckBoxMenuItem jcb = (JCheckBoxMenuItem)e.getSource();
@@ -303,7 +303,7 @@ public class Application extends JFrame implements ComponentListener{
 		});
 		
 		toggleLeftWall = new JCheckBoxMenuItem("Mur de gauche");
-		toggleLeftWall.setToolTipText("Active ou désactive un mur de gauche");
+		toggleLeftWall.setToolTipText("Active ou desactive un mur de gauche");
 		toggleLeftWall.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
 				JCheckBoxMenuItem jcb = (JCheckBoxMenuItem)e.getSource();
@@ -317,7 +317,7 @@ public class Application extends JFrame implements ComponentListener{
 		});
 		
 		toggleRightWall = new JCheckBoxMenuItem("Mur de droite");
-		toggleRightWall.setToolTipText("Active ou désactive un mur de droite");
+		toggleRightWall.setToolTipText("Active ou desactive un mur de droite");
 		toggleRightWall.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
 				JCheckBoxMenuItem jcb = (JCheckBoxMenuItem)e.getSource();
@@ -330,8 +330,8 @@ public class Application extends JFrame implements ComponentListener{
 			}
 		});
 		
-		JMenuItem reeinitialize = new JMenuItem("Réeinitialiser");
-		reeinitialize.setToolTipText("Permet de revenir à l'état originel de l'application");
+		JMenuItem reeinitialize = new JMenuItem("Reeinitialiser");
+		reeinitialize.setToolTipText("Permet de revenir a l'etat originel de l'application");
 		reeinitialize.addActionListener(new ActionListener(){		
 			public void actionPerformed(ActionEvent e) {
 			world.clear();
@@ -341,27 +341,27 @@ public class Application extends JFrame implements ComponentListener{
 			toggleRightWall.setSelected(false);
 		}});
 		
-		JMenuItem selection = new JMenuItem("Sélection");
-		selection.setToolTipText("Permet de sélectionner un object");
+		JMenuItem selection = new JMenuItem("Selection");
+		selection.setToolTipText("Permet de selectionner un object");
 		selection.addActionListener(selectionListener);
 		
 		JMenuItem line = new JMenuItem("Ligne");
-		line.setToolTipText("Permet de créé une nouvelle ligne");
+		line.setToolTipText("Permet de cree une nouvelle ligne");
 		line.addActionListener(lineListener);
 
 		JMenuItem polygon = new JMenuItem("Polygon");
-		polygon.setToolTipText("Permet de créé un nouveau polygône");
+		polygon.setToolTipText("Permet de cree un nouveau polygone");
 		polygon.addActionListener(polygonListener);
 		
 		JMenuItem circle = new JMenuItem("Circle");
-		circle.setToolTipText("Permet de créé un nouveau cercle");
+		circle.setToolTipText("Permet de cree un nouveau cercle");
 		circle.addActionListener(circleListener);
 		
 		JMenuItem particleGen = new JMenuItem("Particule");
-		particleGen.setToolTipText("Permet de généré des particules");
+		particleGen.setToolTipText("Permet de genere des particules");
 		particleGen.addActionListener(particleListener);
 		
-		JMenuItem helpPane = new JMenuItem("À Propos");
+		JMenuItem helpPane = new JMenuItem("A Propos");
 		helpPane.setToolTipText("Fourni des informations sur l'utilisation");
 		helpPane.addActionListener(new HelpAction());
 		
@@ -466,7 +466,7 @@ public class Application extends JFrame implements ComponentListener{
 			JSlider source = (JSlider) arg0.getSource();
 			if(source.getValueIsAdjusting()){
 				double gravityValue = Math.round(source.getValue()*100)*0.01;
-				lblGravity.setText("Gravité : " + gravityValue);
+				lblGravity.setText("Gravite : " + gravityValue);
 				scene.getWorld().setGravity(-gravityValue*10);
 			}
 		}

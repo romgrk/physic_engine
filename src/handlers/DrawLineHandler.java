@@ -17,7 +17,7 @@ import GUI.WDrawer;
 /**
  * 
  * This class manage the creation of new lines
- * @author Yanick Sévigny
+ * @author Yanick Sevigny
  * 
  *
  */

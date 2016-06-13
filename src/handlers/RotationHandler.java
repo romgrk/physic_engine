@@ -1,6 +1,6 @@
 /*
 Rotation Handler : Permet la rotation des object par Drag du deuxieme bouton de la souris
-Ne pas oublier de créé un RotationHandler dans la classe Application
+Ne pas oublier de cree un RotationHandler dans la classe Application
 ********** Revoir un moyen d'avoir un triangle rectangle avec les MouseEvents *************
 */
 
@@ -20,7 +20,7 @@ import GUI.Scene;
 /**
  * 
  * This class manage the modification of the orientation of the selected object
- * @author Yanick Sévigny
+ * @author Yanick Sevigny
  * 
  *
  */

@@ -18,7 +18,7 @@ import constants.Settings;
 /**
  * 
  * This class extends JComponent and creates a customized button
- * @author Yanick Sévigny
+ * @author Yanick Sevigny
  *
  */
 public class OptionButton extends JComponent implements MouseListener{

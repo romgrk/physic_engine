@@ -172,6 +172,6 @@ public class Angle {
 	}
 	
 	public String toString () {
-		return absoluteDeg(radToDeg(angle)) + "°";
+		return absoluteDeg(radToDeg(angle)) + "deg";
 	}
 }
